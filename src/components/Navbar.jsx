@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative h-[80px]">
+    <div className="relative h-[80px] max-w-screen-lg">
       <nav className="bg-white w-full px-4 py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-4 ">
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink from-10% to-secondary to-40%" />
@@ -56,7 +56,7 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <div className={`bg-secondary absolute top-[80px] w-full py-4 px-4 sm:hidden ${isMenuOpen ? ("block") : ("hidden")}`}>
+      <div className={`bg-secondary absolute top-[80px] w-full py-4 px-4 sm:hidden ${isMenuOpen ? ("block h-screen") : ("hidden")}`}>
         <ul className="flex flex-col gap-8 text-xl items-center font-medium">
           {navItem.map((item) => (
             <li key={item.link}>
