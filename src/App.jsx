@@ -1,11 +1,13 @@
 import "./App.css";
+import { Home } from "./components/Home";
 import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <Navbar />
-      <h1 className="text-3xl text-red-500">hello world</h1>
+      <Home />
+      <div className="bg-pink w-full h-screen"></div>
     </>
   );
 }
