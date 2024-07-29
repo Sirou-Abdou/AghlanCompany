@@ -6,8 +6,8 @@ const Features = () => {
     <div className="max-w-screen-2xl my-24 px-4 md:px-14 mx-auto">
       <div className="flex flex-col lg:flex-row justify-between items-start gap-10 ">
         <div className="lg:w-1/4">
-          <h2 className="text-3xl font-bold lg:w-1/2 mb-3">Our Services</h2>
-          <p className="text-tartiary text-base">
+          <h2 className="text-2xl md:text-4xl font-bold mb-5">Our Services</h2>
+          <p className="text-tartiary text-md mb-7 md:text-lg">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae,
             voluptatibus praesentium tempore quod aliquam rerum consequatur
             consequuntur dolorem. Ex, necessitatibus? Nesciunt porro repellat
