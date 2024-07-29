@@ -19,7 +19,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative h-[80px] max-w-screen-lg">
+    <div className="relative h-[80px] max-w-screen-2xl mx-auto">
       <nav className="bg-white w-full px-4 py-4 flex justify-between items-center">
         <a href="/" className="flex items-center gap-4 ">
           <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink from-10% to-secondary to-40%" />
@@ -41,7 +41,7 @@ const Navbar = () => {
             <GrLanguage />
             Language
           </a>
-          <Button>Sign up</Button>
+          <Button title="Sign up"/>
         </div>
         <div className="flex sm:hidden relative">
           <button
