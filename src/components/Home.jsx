@@ -1,7 +1,7 @@
 import bannerImg from "../assets/banner.svg";
 import Banner from "../shared/Banner";
 
-export const Home = () => {
+const Home = () => {
   return (
     <Banner
       bannerImg={bannerImg}
@@ -12,3 +12,5 @@ export const Home = () => {
     />
   );
 };
+
+export default Home;

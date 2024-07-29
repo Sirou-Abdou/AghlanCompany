@@ -41,7 +41,7 @@ const Navbar = () => {
             <GrLanguage />
             Language
           </a>
-          <Button title="Sign up"/>
+          <Button title="Sign up" />
         </div>
         <div className="flex sm:hidden relative">
           <button
@@ -56,7 +56,11 @@ const Navbar = () => {
           </button>
         </div>
       </nav>
-      <div className={`bg-secondary absolute top-[80px] w-full py-4 px-4 sm:hidden ${isMenuOpen ? ("block h-screen") : ("hidden")}`}>
+      <div
+        className={`bg-secondary absolute top-[80px] w-full py-4 px-4 sm:hidden ${
+          isMenuOpen ? "block h-screen" : "hidden"
+        }`}
+      >
         <ul className="flex flex-col gap-8 text-xl items-center font-medium">
           {navItem.map((item) => (
             <li key={item.link}>

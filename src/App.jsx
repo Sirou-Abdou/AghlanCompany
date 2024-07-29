@@ -1,7 +1,8 @@
 import "./App.css";
 import Features from "./components/Features";
-import { Home } from "./components/Home";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Home />
       <Features />
+      <About />
       <div className="bg-pink w-full h-screen"></div>
     </>
   );

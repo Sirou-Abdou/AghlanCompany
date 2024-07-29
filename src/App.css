@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
 
 body {
-    font-family: "Jost", sans-serif;
-    color: #010851;
+  font-family: "Jost", sans-serif;
+  color: #010851;
 }
 
 nav {
-    z-index: 10001 !important;
+  z-index: 10001 !important;
 }
 
 .gradientBg {
-    background: linear-gradient(99deg, #EE9AE5 0%, #5961F9 100%);
+  background: linear-gradient(99deg, #ee9ae5 0%, #5961f9 100%);
 }
