@@ -6,12 +6,12 @@ const ToggleButton = ({ isToggled, toggle }) => {
       <button
         className={`${
           isToggled ? "bg-secondary" : "bg-tartiary"
-        } relative inline-flex w-20 h-8 items-center rounded-full transition-colors duration-200 ease-in-out focus:outline-none`}
+        } relative inline-flex w-16 h-8 items-center rounded-full transition-colors duration-200 ease-in-out focus:outline-none`}
         onClick={toggle}
       >
         <span
           className={`${
-            isToggled ? "translate-x-10" : "translate-x-1"
+            isToggled ? "translate-x-7" : "translate-x-1"
           } inline-block h-6 w-8 transform bg-white rounded-full transition-transform duration-200 ease-in-out`}
         />
       </button>

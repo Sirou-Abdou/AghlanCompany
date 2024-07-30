@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";
 import Pricing from "./components/Pricing";
+import Newsletter from "./components/Newsletter";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +15,8 @@ function App() {
       <Features />
       <About />
       <Pricing />
-      <div className="bg-pink w-full h-screen"></div>
+      <Newsletter />
+      <Footer />
     </>
   );
 }

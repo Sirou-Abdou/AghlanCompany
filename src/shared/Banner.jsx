@@ -10,7 +10,7 @@ const Banner = ({ bannerImg, heading, subheading, btnTitle1, btnTitle2 }) => {
         <p className="text-sm mt-8 text-white w-[80%]">{subheading}</p>
         <div className="flex gap-4 mt-8">
           <Button title={btnTitle1} className="text-white font-bold" />
-          <Button title={btnTitle2} className="text-white " />
+          <Button title={btnTitle2} className={`${!btnTitle2 ? "hidden": "text-white"} `} />
         </div>
       </div>
       <div className="sm:w-1/3 w-[300px] flex self-center">

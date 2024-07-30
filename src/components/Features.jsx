@@ -14,8 +14,8 @@ const Features = () => {
             accusamus eveniet omnis tenetur velit excepturi maxime.
           </p>
         </div>
-        <div className="w-full lg:w-3/4">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-start gap-8 md:gap-12">
+        <div className="w-full lg:w-3/4 flex flex-col items-center">
+          <div className="w-[60%] sm:w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-start gap-8 md:gap-12">
             <Sticker image={stickerImg} title="Transport en platefome" />
             <Sticker
               image={stickerImg}

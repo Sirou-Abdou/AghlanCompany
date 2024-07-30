@@ -14,15 +14,21 @@ const PriceSticker = ({ title, description, price, periodPlan, services }) => {
       </h2>
       <ul className="flex flex-col items-start w-full gap-4">
         {services.map((service) => (
-          <div className="flex items-center gap-4">
-            <span className={`${service.isIncluded ? "text-green-500" : "text-red-500" }`}><FaCircle /></span>
+          <div className="flex items-center gap-4" key={service.service}>
+            <span
+              className={`${
+                service.isIncluded ? "text-green-500" : "text-red-500"
+              }`}
+            >
+              <FaCircle />
+            </span>
             <li className="text-sm font-semibold">{service.service}</li>
           </div>
         ))}
       </ul>
       <Button
-        title="Enroll"
-        className="text-secondary bg-transparent border-secondary border-2 rounded-3xl"
+        title="Get started"
+        className="text-white"
       />
     </div>
   );

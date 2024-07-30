@@ -3,6 +3,7 @@ import { GrLanguage } from "react-icons/gr";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import Button from "./Button";
+import Logo from "./Logo";
 
 const Navbar = () => {
   const navItem = [
@@ -21,12 +22,7 @@ const Navbar = () => {
   return (
     <div className="relative h-[80px] max-w-screen-2xl mx-auto">
       <nav className="bg-white w-full px-4 py-4 flex justify-between items-center">
-        <a href="/" className="flex items-center gap-4 ">
-          <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-pink from-10% to-secondary to-40%" />
-          <span className="flex font-semibold text-xl lg:text-3xl uppercase">
-            tflorentina
-          </span>
-        </a>
+        <Logo />
         <ul className="hidden md:flex md:gap-6 lg:gap-8 xl:gap-20 font-semibold text-lg">
           {navItem.map((item) => (
             <li key={item.link}>
