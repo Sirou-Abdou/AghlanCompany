@@ -4,15 +4,10 @@ import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import Button from "./Button";
 import Logo from "./Logo";
+import { Link } from "react-scroll";
+import { NAV_ITEMS } from "../shared/data";
 
 const Navbar = () => {
-  const navItem = [
-    { link: "Overview", path: "home" },
-    { link: "Feature", path: "Feature" },
-    { link: "About", path: "About" },
-    { link: "Pricing", path: "Pricing" },
-  ];
-
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -20,18 +15,23 @@ const Navbar = () => {
   };
 
   return (
-    <div className="relative h-[80px] max-w-screen-2xl mx-auto">
-      <nav className="bg-white w-full px-4 py-4 flex justify-between items-center">
+    <div className="max-w-screen-2xl mx-auto w-full relative">
+      <nav className="bg-white w-full px-4 py-2 flex justify-between items-center shadow-3xl fixed top-0 left-0">
         <Logo />
-        <ul className="hidden md:flex md:gap-6 lg:gap-8 xl:gap-20 font-semibold text-lg">
-          {navItem.map((item) => (
-            <li key={item.link}>
-              <a href={item.path} className="block hover:text-gray-300">
-                {item.link}
-              </a>
-            </li>
+        <div className="hidden md:flex md:gap-6 lg:gap-8 xl:gap-20 font-semibold text-lg">
+          {NAV_ITEMS.map(({ link, path }) => (
+            <Link
+              key={link}
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="block hover:text-gray-300 cursor-pointer"
+            >
+              {link}
+            </Link>
           ))}
-        </ul>
+        </div>
         <div className="hidden sm:flex justify-between items-center gap-6">
           <a href="/" className="flex gap-2 items-center  hover:text-secondary">
             <GrLanguage />
@@ -53,19 +53,25 @@ const Navbar = () => {
         </div>
       </nav>
       <div
-        className={`bg-secondary absolute top-[80px] w-full py-4 px-4 sm:hidden ${
-          isMenuOpen ? "block h-screen" : "hidden"
+        className={`bg-secondary fixed top-0 mt-[70px] w-full py-4 px-4 sm:hidden ${
+          isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <ul className="flex flex-col gap-8 text-xl items-center font-medium">
-          {navItem.map((item) => (
-            <li key={item.link}>
-              <a href={item.path} className="block hover:text-gray-300">
-                {item.link}
-              </a>
-            </li>
+        <div className="flex flex-col gap-8 text-xl items-center font-medium text-white">
+          {NAV_ITEMS.map(({ link, path }) => (
+            <Link
+              key={link}
+              to={path}
+              spy={true}
+              smooth={true}
+              offset={-100}
+              className="block hover:text-gray-300 cursor-pointer"
+              onClick={toggleMenu}
+            >
+              {link}
+            </Link>
           ))}
-        </ul>
+        </div>
       </div>
     </div>
   );

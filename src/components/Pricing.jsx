@@ -52,7 +52,7 @@ const Pricing = () => {
   ];
 
   return (
-    <div className="md:px-14 p-4 max-w-screen-2xl 2xl:mx-auto my-24 flex flex-col items-center">
+    <div className="md:px-14 p-4 max-w-screen-2xl 2xl:mx-auto my-24 flex flex-col items-center" id="pricing">
       <div className="text-center">
         <h1 className="text-2xl md:text-5xl font-extrabold mb-5">
           Here are all our plans
