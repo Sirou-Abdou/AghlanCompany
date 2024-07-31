@@ -2,10 +2,10 @@ import { useState } from "react";
 import { GrLanguage } from "react-icons/gr";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
-import Button from "./Button";
-import Logo from "./Logo";
+import Button from "../components/Button";
+import Logo from "../components/Logo";
 import { Link } from "react-scroll";
-import { NAV_ITEMS } from "../shared/data";
+import { NAV_ITEMS } from "../data/data";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

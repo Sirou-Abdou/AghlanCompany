@@ -1,6 +1,6 @@
 import { useState } from "react";
-import PriceSticker from "./PriceSticker";
-import ToggleButton from "./ToggleButton";
+import PriceSticker from "../../features/PriceSticker";
+import ToggleButton from "../../components/ToggleButton";
 
 const Pricing = () => {
   const [isYearly, setIsYearly] = useState(false);

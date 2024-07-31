@@ -1,11 +1,11 @@
 import "./App.css";
-import Features from "./components/Features";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Pricing from "./components/Pricing";
-import Newsletter from "./components/Newsletter";
-import Footer from "./components/Footer";
+import Features from "./pages/Features/Features";
+import Navbar from "./layouts/Navbar";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Pricing from "./pages/Pricing/Pricing";
+import Newsletter from "./pages/Home/Newsletter";
+import Footer from "./layouts/Footer";
 
 function App() {
   return (

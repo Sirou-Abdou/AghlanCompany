@@ -1,12 +1,12 @@
-import Logo from "./Logo";
-import Button from "./Button";
+import Logo from "../components/Logo";
+import Button from "../components/Button";
 import { FaFacebook } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { Link } from "react-scroll";
 import { nanoid } from "nanoid";
-import { FOOTER_ITEMS } from "../shared/data";
+import { FOOTER_ITEMS } from "../data/data";
 
 const Footer = () => {
   return (

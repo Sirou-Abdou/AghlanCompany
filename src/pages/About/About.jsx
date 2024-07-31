@@ -1,6 +1,6 @@
-import Button from "./Button";
-import aboutImg1 from "../assets/aboutImage1.png";
-import aboutImg2 from "../assets/aboutImage2.png";
+import Button from "../../components/Button";
+import aboutImg1 from "../../assets/aboutImage1.png";
+import aboutImg2 from "../../assets/aboutImage2.png";
 
 const About = () => {
   return (

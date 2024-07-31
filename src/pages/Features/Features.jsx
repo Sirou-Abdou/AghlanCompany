@@ -1,7 +1,7 @@
-import stickerImg1 from "../assets/stickerImage1.png";
-import stickerImg2 from "../assets/stickerImage2.png";
-import stickerImg3 from "../assets/stickerImage3.png";
-import Sticker from "./Sticker";
+import stickerImg1 from "../../assets/stickerImage1.png";
+import stickerImg2 from "../../assets/stickerImage2.png";
+import stickerImg3 from "../../assets/stickerImage3.png";
+import Sticker from "../../features/Sticker";
 
 const Features = () => {
   return (

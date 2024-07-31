@@ -1,5 +1,5 @@
-import bannerImg from "../assets/banner.svg";
-import Banner from "../shared/Banner";
+import bannerImg from "../../assets/banner.svg";
+import Banner from "../../components/Banner";
 
 const Home = () => {
   return (

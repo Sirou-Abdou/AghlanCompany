@@ -1,4 +1,4 @@
-import Button from "./Button";
+import Button from "../components/Button";
 import { FaCircle } from "react-icons/fa6";
 
 const PriceSticker = ({ title, description, price, periodPlan, services }) => {

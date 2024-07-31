@@ -1,5 +1,5 @@
-import NewsletterImg from "../assets/newsletterImg.png";
-import Banner from "../shared/Banner";
+import NewsletterImg from "../../assets/newsletterImg.png";
+import Banner from "../../components/Banner";
 
 const Newsletter = () => {
   return (
